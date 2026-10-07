@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ruben Teixeira — web developer building interactive and responsive web applications with TypeScript, Node.js, and Bootstrap."
+    />
+    <title>Ruben Teixeira | Portfolio</title>
+
+    <!-- Favicon (optional — remove if you don't have one) -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E"
+    />
+
+    <!-- Bootstrap 5 (CSS) & Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../src/css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom py-3 sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">
+          <span class="text-primary">✦</span> Ruben Teixeira
+        </a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#aboutme">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero py-5">
+      <div class="container py-5">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="d-flex align-items-center gap-3 mb-3 flex-wrap">
+              <span class="ts-indicator"><i class="bi bi-braces me-1"></i> Fullstack</span>
+              <span class="ts-indicator"><i class="bi bi-braces me-1"></i> AI</span>
+              <span class="ts-indicator"><i class="bi bi-braces me-1"></i> ML</span>
+            </div>
+            <h1 class="display-4 fw-bold lh-sm mb-3">
+              Hello, <br />welcome to my <span class="text-primary">portfolio</span>
+            </h1>
+            <p class="lead text-secondary mb-4 fs-5">
+              I'm a fullstack developer focused on building interactive and responsive web
+              applications. This portfolio is an inital showcase of my work history, skills,
+              experience and future projects in software engineering.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#work" class="btn btn-dark btn-lg px-4 rounded-pill">
+                View projects <i class="bi bi-arrow-down ms-2"></i>
+              </a>
+              <a href="#contact" class="btn btn-outline-dark btn-lg px-4 rounded-pill">Contact</a>
+              <a href="#aboutme" class="btn btn-outline-dark btn-lg px-4 rounded-pill">About Me</a>
+            </div>
+          </div>
+          <div class="col-lg-5 text-center text-lg-end">
+            <img
+              src="https://ui-avatars.com/api/?name=Ruben+Teixeira&size=200&background=0f172a&color=fff&bold=true"
+              alt="Ruben Teixeira"
+              class="avatar img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT THIS PAGE -->
+    <section id="aboutpage" class="py-5 bg-white border-top border-bottom">
+      <div class="container py-4">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-5">
+            <h2 class="display-6 fw-bold mb-3">About this page</h2>
+            <p class="text-secondary fs-5">
+              This portfolio uses
+              <strong>Node.js</strong> for dependency management and build scripts,
+              <strong>TypeScript</strong> for type-safe interactivity, and
+              <strong>Bootstrap 5</strong> for a responsive grid.
+            </p>
+            <div class="d-flex gap-3 mt-4 flex-wrap">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span class="fw-medium">Node.js</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span class="fw-medium">TypeScript</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span class="fw-medium">Bootstrap 5</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="row row-cols-2 row-cols-sm-4 g-4 text-center">
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-filetype-js fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">Node.js</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-filetype-tsx fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">TypeScript</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-bootstrap fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">Bootstrap</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-git fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">Git</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section id="aboutme" class="py-5 bg-white border-top border-bottom">
+      <div class="container py-4">
+        <div class="row g-5 align-items-center">
+          <div class="col-md-5">
+            <h2 class="display-6 fw-bold mb-3">A little about me</h2>
+            <p class="text-secondary fs-5">
+              Throughout my career I've worked across a varietyof industries both in and outside of
+              software development. My time working in hospitality and retail taught me the
+              importance of customer service, while my experience in research and data analysis
+              honed my problem-solving skills. I bring this diverse background to my work as a
+              software engineer, where I strive to create solutions that are both effective and
+              user-friendly. Some of my strongest skills include analyitical thinking, effective
+              communication, and a passion for learning new technologies. I'm very passionate about
+              things that I enjoy, so when I focus on a project, I give it my all to make sure it is
+              the best that it can be. Below I have some of my other interests, and to the right are
+              the programming languages I have most experience with, which I am always looking to
+              expand upon.
+            </p>
+            <div class="d-flex gap-3 mt-4 flex-wrap">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span class="fw-medium">Volleyball</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span class="fw-medium">Competitive gaming</span>
+              </div>
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill text-success"></i>
+                <span class="fw-medium">Martial arts</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="row row-cols-3 g-4 text-center">
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-filetype-php fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">PHP</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-filetype-py fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">Python</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-filetype-java fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">Java</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-filetype-html fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">HTML/CSS</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-filetype-js fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">JavaScript</p>
+                </div>
+              </div>
+              <div class="col">
+                <div class="p-3 bg-light rounded-4">
+                  <i class="bi bi-hash fs-2 text-primary"></i>
+                  <p class="mt-2 mb-0 fw-medium">C#</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="py-5">
+      <div class="container py-4">
+        <div class="d-flex flex-wrap justify-content-between align-items-end mb-4">
+          <div>
+            <h2 class="display-6 fw-bold mb-1">History & Projects</h2>
+          </div>
+          <div class="d-flex gap-2 flex-wrap mt-3 mt-sm-0" id="filterContainer">
+            <button class="filter-btn active" data-filter="experience">
+              Professional Experience
+            </button>
+            <button class="filter-btn" data-filter="education">Education</button>
+            <button class="filter-btn" data-filter="projects">Projects</button>
+          </div>
+        </div>
+
+        <!-- Populated by TypeScript -->
+        <div class="row g-4" id="projectsGrid"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER / CONTACT -->
+    <footer id="contact" class="py-5 bg-white">
+      <div class="container py-3">
+        <div class="row g-4">
+          <div class="col-md-5">
+            <h4 class="fw-bold mb-3">Let's connect</h4>
+            <p class="text-secondary mb-4">Available for freelance or full-time opportunities.</p>
+            <p class="text-secondary mb-4">
+              Email: rtx98.dev@proton.me <br />
+              Number: +447984310094
+            </p>
+            <div class="d-flex gap-3 fs-4">
+              <a href="https://github.com/rtx98dev?tab=repositories" aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/ruben-teixeira-0ba564203/" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="bg-light p-4 rounded-4">
+              <p class="mb-2 fw-semibold">
+                <i class="bi bi-node-plus me-2"></i>Thank you for visiting my portfolio!
+              </p>
+              <p class="text-secondary small mb-0">
+                I will continue to update this page with new exciting projects in the future. Stay
+                tuned for more updates and feel free to reach out if you have any questions or
+                opportunities for collaboration!
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+          <p class="text-secondary small mb-0">© 2026 Ruben Teixeira</p>
+          <p class="text-secondary small mb-0">
+            Built with <strong>Node.js</strong>, <strong>TypeScript</strong>, and
+            <strong>Bootstrap 5</strong>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Compiled TypeScript entry point -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

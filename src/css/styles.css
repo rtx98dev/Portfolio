@@ -1,0 +1,101 @@
+/* ============================================================
+   Filter buttons — pill style with sliding accent
+   ============================================================ */
+#filterContainer {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 999px;
+  padding: 0.35rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  background: transparent;
+  color: #475569;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0.55rem 1.15rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    color 0.22s ease,
+    background 0.22s ease,
+    box-shadow 0.22s ease,
+    transform 0.15s ease;
+  white-space: nowrap;
+  line-height: 1;
+  font-family: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hover (non-active) */
+.filter-btn:hover:not(.active) {
+  color: #0f172a;
+  background: #ffffff;
+  transform: translateY(-1px);
+}
+
+/* Press feedback */
+.filter-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+/* Active state — dark navy pill with soft glow */
+.filter-btn.active {
+  background: #0f172a;
+  color: #ffffff;
+  box-shadow:
+    0 6px 14px -6px rgba(15, 23, 42, 0.4),
+    0 2px 4px -2px rgba(15, 23, 42, 0.2);
+}
+
+/* Optional accent dot on the active pill (subtle) */
+.filter-btn.active::after {
+  content: '';
+  position: absolute;
+  inset: auto 0.9rem auto auto;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #60a5fa;
+  opacity: 0.9;
+}
+
+/* Keyboard focus */
+.filter-btn:focus-visible {
+  outline: 2px solid #0f172a;
+  outline-offset: 2px;
+}
+
+/* Disable transitions on first paint to avoid flash */
+.filter-btn.no-transition,
+.filter-btn.no-transition::after {
+  transition: none !important;
+}
+
+/* Responsive — stack on tiny screens */
+@media (max-width: 480px) {
+  #filterContainer {
+    width: 100%;
+    justify-content: stretch;
+  }
+
+  .filter-btn {
+    flex: 1 1 auto;
+    justify-content: center;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.82rem;
+  }
+
+  .filter-btn.active::after {
+    display: none;
+  }
+}

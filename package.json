@@ -1,0 +1,35 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "My project portfolio website",
+  "type": "module",
+  "main": "dist/js/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "live-server public --port=3000 --open=/index.html",
+    "dev": "concurrently \"npm run watch\" \"npm run serve\"",
+    "start": "node server.js",
+    "lint": "eslint src/ts/**/*.ts",
+    "format": "prettier --write \"src/**/*.{ts,css}\" \"public/**/*.html\""
+  },
+  "keywords": [
+    "portfolio",
+    "typescript",
+    "bootstrap",
+    "node"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.71.1",
+    "@typescript-eslint/parser": "^8.71.1",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.2.0",
+    "typescript": "^6.0.0"
+  }
+}
