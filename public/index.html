@@ -1,42 +1,40 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Ruben Teixeira — web developer building interactive and responsive web applications with TypeScript, Node.js, and Bootstrap."
-    />
-    <title>Ruben Teixeira | Portfolio</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Ruben Teixeira — web developer building interactive and responsive web applications with TypeScript, Node.js, and Bootstrap."
+  />
+  <title>Ruben Teixeira | Portfolio</title>
 
-    <!-- Favicon (optional — remove if you don't have one) -->
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E"
-    />
+  <!-- Favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E"
+  />
 
-    <!-- Bootstrap 5 (CSS) & Icons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
 
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="../src/css/styles.css" />
-  </head>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/src/css/styles.css" />
+</head>
   <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-white border-bottom py-3 sticky-top">
@@ -57,6 +55,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-medium">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
             <li class="nav-item"><a class="nav-link" href="#aboutme">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -64,6 +63,91 @@
         </div>
       </div>
     </nav>
+
+    <div id="carousel1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carousel1"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="images/2150010125.jpg" class="d-block w-100" alt="Full-stack Development" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Software Developer</h5>
+            <p>I build interactive and responsive web applications to suit customer needs.</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img
+            src="images/ai-technology-human-interaction.jpg"
+            class="d-block w-100"
+            alt="Research-led engineering"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Specialisation in AI and Web Development</h5>
+            <p>
+              I aim to bridge the gap between research and practical applications, using my skills
+              to create innovative solutions.Through the integration of AI and web development, I
+              strive to deliver cutting-edge solutions that enhance user experiences and drive
+              business growth.
+            </p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="images/handshake.jpg" class="d-block w-100" alt="Open for opportunities" />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Let's build something together</h5>
+            <p>
+              I'm available for freelance projects and full-time roles. Let's talk about how we can help
+              each other!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel1"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel1"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- HERO -->
     <section class="hero py-5">
@@ -80,8 +164,8 @@
             </h1>
             <p class="lead text-secondary mb-4 fs-5">
               I'm a fullstack developer focused on building interactive and responsive web
-              applications. This portfolio is an inital showcase of my work history, skills,
-              experience and future projects in software engineering.
+              applications. This portfolio is an inital showcase of my work experience, skills,
+              current and future projects in software engineering.
             </p>
             <div class="d-flex gap-3 flex-wrap">
               <a href="#work" class="btn btn-dark btn-lg px-4 rounded-pill">
@@ -93,7 +177,7 @@
           </div>
           <div class="col-lg-5 text-center text-lg-end">
             <img
-              src="https://ui-avatars.com/api/?name=Ruben+Teixeira&size=200&background=0f172a&color=fff&bold=true"
+              src="images/IMG_2921.jpg"
               alt="Ruben Teixeira"
               class="avatar img-fluid"
             />
@@ -109,10 +193,10 @@
           <div class="col-md-5">
             <h2 class="display-6 fw-bold mb-3">About this page</h2>
             <p class="text-secondary fs-5">
-              This portfolio uses
-              <strong>Node.js</strong> for dependency management and build scripts,
-              <strong>TypeScript</strong> for type-safe interactivity, and
-              <strong>Bootstrap 5</strong> for a responsive grid.
+              This portfolio was created using
+              <strong>Node.js</strong>,
+              <strong>TypeScript</strong>, and
+              <strong>Bootstrap 5</strong>.
             </p>
             <div class="d-flex gap-3 mt-4 flex-wrap">
               <div class="d-flex align-items-center gap-2">
@@ -183,11 +267,11 @@
             <div class="d-flex gap-3 mt-4 flex-wrap">
               <div class="d-flex align-items-center gap-2">
                 <i class="bi bi-check-circle-fill text-success"></i>
-                <span class="fw-medium">Volleyball</span>
+                <span class="fw-medium">Competitive Volleyball</span>
               </div>
               <div class="d-flex align-items-center gap-2">
                 <i class="bi bi-check-circle-fill text-success"></i>
-                <span class="fw-medium">Competitive gaming</span>
+                <span class="fw-medium">Gaming</span>
               </div>
               <div class="d-flex align-items-center gap-2">
                 <i class="bi bi-check-circle-fill text-success"></i>

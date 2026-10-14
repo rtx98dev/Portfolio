@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "serve": "live-server public --port=3000 --open=/index.html",
+    "serve": "live-server . --port=3000 --open=/public/index.html",
     "dev": "concurrently \"npm run watch\" \"npm run serve\"",
     "start": "node server.js",
     "lint": "eslint src/ts/**/*.ts",
