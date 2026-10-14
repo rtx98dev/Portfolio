@@ -99,11 +99,11 @@ function cardTemplate(entry: Entry): string {
         <img src="${entry.image}" class="card-img-top" alt="${entry.title}"
              style="height: 180px; object-fit: cover;">
         <div class="card-body p-4">
-          <div class="d-flex justify-content-between align-items-start mb-2 flex-wrap gap-1">
-            <h5 class="card-title fw-bold mb-0">${entry.title}</h5>
-            <span class="badge border px-2 py-1 rounded-pill small ${badgeClass}">
-              ${categoryLabel}
-            </span>
+          <div class="mb-2">
+            <h5 class="card-title fw-bold mb-2">${entry.title}</h5>
+              <span class="badge border px-2 py-1 rounded-pill small ${badgeClass}">
+                ${categoryLabel}
+              </span>
           </div>
           ${meta}
           <p class="card-text text-secondary small mt-2">${entry.description}</p>

@@ -110,7 +110,7 @@ export const entries = [
     {
         id: 304,
         title: 'Dictionary Program',
-        description: 'C# console application that reads a text file, analyzes its words, and provides statistics. takes a text file, validates which tokens are real words, counts lines/words/errors, finds unique words, finds the longest and most frequent words, and lets the user look up which lines contain a given word.',
+        description: 'C# console application that reads a text file, analyzes its words, and provides statistics. It takes a text file, validates which tokens are real words, counts lines/words/errors, finds unique words, longest and most frequent words, and lets the user look up which lines contain a given word.',
         category: 'projects',
         subCategory: 'backend',
         tech: ['C#'],
